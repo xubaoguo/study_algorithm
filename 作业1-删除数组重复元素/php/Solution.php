@@ -12,7 +12,7 @@ class Solution {
         }
         $i = 0;
         $res = [];
-        for ($j = 1; $j < $total - 1; $j++) {
+        for ($j = 1; $j < $total; $j++) {
             if ($num[$i] != $num[$j]) {
                 $i++;
                 $res[$i] = $num[$j];
