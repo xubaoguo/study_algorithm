@@ -11,11 +11,9 @@ class Solution {
             return 1;
         }
         $i = 0;
-        $res = [];
         for ($j = 1; $j < $total; $j++) {
             if ($num[$i] != $num[$j]) {
                 $i++;
-                $res[$i] = $num[$j];
                 $num[$i] = $num[$j];
             }
         }

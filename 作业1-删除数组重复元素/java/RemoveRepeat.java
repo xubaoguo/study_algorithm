@@ -33,15 +33,15 @@ class Solution {
     public int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
         int i = 0;
-        int[] after = new int[10];
+        //int[] after = new int[10];
         for (int j = 1; j < nums.length; j++) {
             if (nums[j] != nums[i]) {
                 i++;
-                after[i] = nums[j];
+                //after[i] = nums[j];
                 nums[i] = nums[j];
             }
         }
-        System.out.println(Arrays.toString(after));
+        //System.out.println(Arrays.toString(after));
         return i + 1;
     }
 }
