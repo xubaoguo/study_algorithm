@@ -1,5 +1,5 @@
 public class Solution {
-	public climbStairs(int n) {
+	public climbStairsIter(int n) {
 		int result = 0;
 		int step1 = 1;
 		int step2 = 2;
