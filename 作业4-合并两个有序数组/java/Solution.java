@@ -15,7 +15,8 @@ public class Solution {
         System.out.println("合并数组:" + Arrays.toString(this.mergeTwoArray(arr3, 3, arr4, 3)));
 	}
 
-	int len1 = m - 1;
+    public int[] mergeTwoArray(int[] nums1, int m, int[] nums2, int n)
+	    int len1 = m - 1;
         int len2 = n - 1;
         int len  = m + n - 1;
         int i = 0;
