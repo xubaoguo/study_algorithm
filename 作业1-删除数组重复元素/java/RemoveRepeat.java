@@ -25,6 +25,7 @@ public class RemoveRepeat {
 class Solution {
 
     /**
+     * https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
      * 原地不动删除数组重复元素，不可以copy一份数组
      * 双指针法
      * @param nums

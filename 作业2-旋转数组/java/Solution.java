@@ -16,6 +16,12 @@ public class Solution {
 		System.out.println("旋转后数组是:" + Arrays.toString(this.rotateArray(arr, 3)));
 	}
 
+	/**
+	 * https://leetcode-cn.com/problems/rotate-array/
+	 * @param  str [description]
+	 * @param  k   [description]
+	 * @return     [description]
+	 */
 	public int[] rotateArray(int[] str, int k) {
 		int temp, previous;
 		for (int i = 0; i < k ; i++ ) {

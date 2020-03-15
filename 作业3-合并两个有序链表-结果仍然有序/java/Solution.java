@@ -9,16 +9,22 @@ public class Solution {
 
 	}
 
+	/**
+	 * https://leetcode-cn.com/problems/merge-two-sorted-lists/
+	 * @param  list1 [description]
+	 * @param  list2 [description]
+	 * @return       [description]
+	 */
 	public ListNode mergeTwoListIteration(ListNode list1, ListNode list2) {
 		ListNode preHead = new ListNode(-1);
 
 		ListNode prev = preHead;
 		while (list1 != null && list2 != null) {
 			if (list1.val < list2.val) {
-				prev.next = list1.next;
-				list1 = list1.nex;
+				prev.next = list1;
+				list1 = list1.next;
 			} else {
-				prev.next = list2.next;
+				prev.next = list2;
 				list2 = list2.next;
 			}
 			prev = prev.next;

@@ -7,6 +7,7 @@ public class Solution {
 	}
 
 	/**
+	 * https://leetcode-cn.com/problems/two-sum/
 	 * 暴力循环解法 时间复杂度O(n^2)
 	 * @param  nums   [description]
 	 * @param  target [description]

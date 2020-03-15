@@ -15,6 +15,15 @@ public class Solution {
         System.out.println("合并数组:" + Arrays.toString(this.mergeTwoArray(arr3, 3, arr4, 3)));
 	}
 
+    /**
+     * https://leetcode-cn.com/problems/merge-sorted-array/
+     * @param  nums1 [description]
+     * @param  m     [description]
+     * @param  nums2 [description]
+     * @param  n     [description]
+     * @return       [description]
+     * @throws len1  [description]
+     */
     public int[] mergeTwoArray(int[] nums1, int m, int[] nums2, int n)
 	    int len1 = m - 1;
         int len2 = n - 1;

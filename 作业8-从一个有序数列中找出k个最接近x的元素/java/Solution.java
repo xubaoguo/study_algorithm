@@ -1,4 +1,12 @@
 public class Solution {
+	/**
+	 * https://leetcode-cn.com/problems/find-k-closest-elements/solution/pai-chu-fa-shuang-zhi-zhen-er-fen-fa-python-dai-ma/
+	 * 
+	 * @param  nums [description]
+	 * @param  k    [description]
+	 * @param  x    [description]
+	 * @return      [description]
+	 */
 	public static List<Integer> findClosestElements(int[] nums, int k, int x) {
 		int size = nums.length;
 		int left = 0;
