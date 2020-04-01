@@ -15,9 +15,9 @@ class Solution
 		$temp = 0;
 		$previous = 0;
 		$total = count($arr);
-		for ($i=0; $i < $k; $i++) {
+		for ($i = 0; $i < $k; $i++) {
 			$previous = $arr[$total - 1];
-			for ($j=0; $j < $total; $j++) {
+			for ($j = 0; $j < $total; $j++) {
 				$temp = $arr[$j];
 				$arr[$j] = $previous;
 				$previous = $temp;
@@ -28,5 +28,4 @@ class Solution
 }
 
 $arr = [1, 2, 3, 4, 5, 6, 7];
-(new Solution())->rotateArray($arr, 3);
-print_r($arr);
+echo json_encode((new Solution())->rotateArray($arr, 3)) . PHP_EOL;

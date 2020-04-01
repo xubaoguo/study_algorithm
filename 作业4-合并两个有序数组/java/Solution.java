@@ -28,15 +28,9 @@ public class Solution {
 	    int len1 = m - 1;
         int len2 = n - 1;
         int len  = m + n - 1;
-        int i = 0;
         while (len1 >= 0 && len2 >= 0) {
             nums1[len--] = nums1[len1] > nums2[len2] ? nums1[len1--] : nums2[len2--];
-            System.out.println("循环" + i + ":" + Arrays.toString(nums1));
-            i++;
         }
-        System.out.println("数组1:" + Arrays.toString(nums1));
-        System.out.println("数组2:" + Arrays.toString(nums2));
-        System.out.println("len2=" + len2);
         // 表示将nums2数组从下标0位置开始，拷贝到nums1数组中，从下标0位置开始，长度为len2+1
         System.arraycopy(nums2, 0, nums1, 0, len2 + 1);
         return nums1;
