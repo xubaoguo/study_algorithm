@@ -24,7 +24,7 @@ public class Solution {
      * @return       [description]
      * @throws len1  [description]
      */
-    public int[] mergeTwoArray(int[] nums1, int m, int[] nums2, int n)
+    public int[] mergeTwoArray(int[] nums1, int m, int[] nums2, int n) {
 	    int len1 = m - 1;
         int len2 = n - 1;
         int len  = m + n - 1;
@@ -34,5 +34,6 @@ public class Solution {
         // 表示将nums2数组从下标0位置开始，拷贝到nums1数组中，从下标0位置开始，长度为len2+1
         System.arraycopy(nums2, 0, nums1, 0, len2 + 1);
         return nums1;
+    }
 
 }

@@ -30,7 +30,7 @@ public class Solution {
 			prev = prev.next;
 		}
 
-		preHead.next = list1 == null ? list2 : list1;
+		prev.next = list1 == null ? list2 : list1;
 		return preHead.next;
 	}
 

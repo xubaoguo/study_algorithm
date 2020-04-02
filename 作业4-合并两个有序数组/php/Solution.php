@@ -38,17 +38,17 @@ nums2=[5,6,7]
         while ($i < $m && $j < $n) {
             $nums1[$p++] = $nums1_copy[$i] < $nums2[$j] ? $nums1_copy[$i ++] : $nums2[$j ++];
         }
-        echo "i={$i}, j={$j}" . "copy=" . json_encode($nums1_copy) . PHP_EOL;
-        echo "1 nums1=" . json_encode($nums1) . PHP_EOL;
-        echo "nums2=" . json_encode($nums2) . PHP_EOL;
+        //echo "i={$i}, j={$j}" . "copy=" . json_encode($nums1_copy) . PHP_EOL;
+        //echo "1 nums1=" . json_encode($nums1) . PHP_EOL;
+        //echo "nums2=" . json_encode($nums2) . PHP_EOL;
         if ($i < $m) {
             array_splice($nums1, $i + $j, $m - $i, array_slice($nums1_copy, $i));
         }
-		echo "2 nums1=" . json_encode($nums1) . PHP_EOL;
+		//echo "2 nums1=" . json_encode($nums1) . PHP_EOL;
         if ($j < $n) {
             array_splice($nums1, $i + $j, $n - $j, array_slice($nums2, $j));
         }
-		echo "3 nums1=" . json_encode($nums1) . PHP_EOL;
+		//echo "3 nums1=" . json_encode($nums1) . PHP_EOL;
         $nums1 = array_slice($nums1, 0, $m + $n);
 
         return $nums1;
